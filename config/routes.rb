@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
+  get 'static_pages/main'
+
+  get 'static_pages/help'
+
   resources :groups
 
   resources :students
 
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,5 +1,11 @@
 var GroupController = Backbone.View.extend({
 	
+	initialize: function() {
+        this.url = "/students/";
+		this.fetch();
+		console.log(this);
+    },
+	
 	collection: new Group(),
 	
     initialize: function () {
@@ -7,6 +13,7 @@ var GroupController = Backbone.View.extend({
 	},
 	
 	render: function () {
+	    
 		this.collection.each(this.renderOne, this);
 	},
 	
