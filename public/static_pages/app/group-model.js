@@ -1,6 +1,6 @@
 var Group = Backbone.Collection.extend({
 
-    url: "/students.json",
+    url: "/students",
 
     model: Person,
 
